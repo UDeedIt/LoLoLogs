@@ -1,40 +1,44 @@
 # Android Studio / IntelliJ
 *.iml
-.gradle
+.gradle/
 .idea/
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-/build
-/captures
-.externalNativeBuild
-.cxx
-/google-services.json
-
-# Local System files
-.DS_Store
+!.idea/codeStyles/
+!.idea/dictionaries/
+local.properties
 
 # Build artifacts
-/build/
+build/
 **/build/
-cushy-storage/build/bundle/
+/captures/
+.externalNativeBuild/
+.cxx/
 
-# Android release build artifacts
-/app/release/
+# Kotlin Multiplatform / Native
+*.kexe
+*.so
+*.dylib
+*.dll
 
-# Specialized
+# iOS / Xcode (for future iOS demo app)
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.xcuserstate
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Signing / Credentials / Specialized
 *.keystore
 *.jks
 *.bin
-
-# Sensitive credentials
-#gradle.properties
 secret-key.gpg
-cushy-storage/secret-key.gpg
-
-# Local IDE/System files
-local.properties
+google-services.json
